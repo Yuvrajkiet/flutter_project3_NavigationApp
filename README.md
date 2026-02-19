@@ -1,16 +1,50 @@
-# navigation_app
+What I Learned
+Understanding the Navigation System
 
-A new Flutter project.
+How the Navigator manages a stack of routes (push and pop behavior)
 
-## Getting Started
+The difference between direct navigation using MaterialPageRoute and named routes
 
-This project is a starting point for a Flutter application.
+How pushNamed and onGenerateRoute create a scalable routing system
 
-A few resources to get you started if this is your first Flutter project:
+How Flutter builds screens through Route objects, not widgets directly
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Working With Routes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Setting up a clean onGenerateRoute structure inside MaterialApp
+
+Creating routes that can receive dynamic data
+
+Avoiding common mistakes like:
+
+navigating inside build()
+
+forgetting to pass arguments
+
+type-casting errors with settings.arguments
+
+Passing Data Between Screens
+
+Sending data using route arguments (arguments: {...})
+
+Receiving data inside onGenerateRoute
+
+Extracting values safely using Map<String, dynamic>
+
+Passing data into screen constructors cleanly and predictably
+
+Screen Architecture & Folder Structure
+
+Separating UI into a screens/ folder
+
+Keeping each screen in its own file for clarity
+
+Maintaining a clean and scalable project structure
+
+Widget Usage & State Management
+
+Using TextEditingController to read and manage user input
+
+Storing and cleaning up controllers inside a StatefulWidget
+
+Keeping the second screen Stateless because it only displays data
